@@ -191,9 +191,9 @@ nav li.active a {
 	}
 }
 
-/**/
+/*icon-boxes*/
 
-.icons {
+.icons-wrap {
 	margin-top: 60px;
 }
 
@@ -211,7 +211,6 @@ nav li.active a {
 	background-color: #323332;
 	width: 150px;
 	height: 150px;
-	border: 1px #323332 solid;
 	border-radius: 20%;
 	display: block;
 	margin: auto;
@@ -226,6 +225,10 @@ nav li.active a {
 	text-transform: uppercase;
 	color: #323332;
 	margin-bottom: 20px;
+}
+
+.icon-box {
+	margin-bottom: 60px;
 }
 
 .icon-box:hover .icon {
@@ -245,4 +248,121 @@ nav li.active a {
 	-o-transition: all 200ms linear;
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
+}
+
+/*gallery*/
+
+.gallery {
+	margin-top: 60px;
+	width: 100%;
+}
+
+.gallery-title {
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.gallery-text {
+	text-align: center;
+	width: 100%;
+	max-width: 650px;
+	margin: 0 auto 30px;
+}
+
+.gallery-line {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+
+.gallery-item {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	margin: 0;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+}
+
+.width-item {
+	width: 600px;
+	height: 300px;
+}
+
+.gallery-item .active {
+	display: none;
+	-moz-transition: all 200ms linear;
+	-ms-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+.gallery-item:hover .active{
+	background-color: #54535399;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-moz-transition: all 200ms linear;
+	-ms-transition: all 200ms linear;
+	-o-transition: all 200ms linear;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+.link {
+	cursor: pointer;
+	background-image: url(../img/link.svg);
+}
+
+.magnifier {
+	cursor: pointer;
+	background-image: url(../img/magnifier.svg);
+}
+
+.active-icon {
+	background-color: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	margin: 0 7px;
+}
+
+/*team*/
+
+.team-item-foto {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.team-item-foto .active {
+	display: none;
+}
+
+.team-item-foto:hover .active {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background-color: #54535399;
+	border-radius: 50%;
+	font-size: 16px;
+}
+
+.team-item-name {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 16px;
 }
