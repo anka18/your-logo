@@ -7,6 +7,8 @@
 	<title>Тестовое задание</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,10 +21,10 @@
 		<div class="container">
 			<header>
 				<div class="row">
-					<div class="col-md-3 center-content">
+					<div class="col-md-3 col-xs-10 center-content">
 						<a href="#" class="logo">Your logo</a>
 					</div>
-					<div class="col-md-9">
+					<div class="col-lg-9 hidden-md hidden-sm hidden-xs">
 						<nav>
 							<ul class="list-inline pull-right">
 								<li class="active"><a href="#">Home</a></li>
@@ -34,6 +36,23 @@
 							</ul>
 						</nav>
 					</div>
+					<!-- mobile menu -->
+					<div class="col-md-9 col-xs-2">
+						<a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+					</div>
+					<div class="col-md-12 hidden-menu hidden-lg">
+						<nav>
+							<ul>
+								<li class="active"><a href="#">Home</a></li>
+								<li><a href="#">Pages</a></li>
+								<li><a href="#">Feature</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!-- /mobile menu -->
 				</div>
 			</header>
 		</div>
@@ -183,7 +202,7 @@
 		<div class="container">
 			<div class="row">
 				<!-- team member -->
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="team-item-foto" style="background-image:url(img/team-member-1.jpg)">
 						<div class="active">
 							Secretary
@@ -193,7 +212,7 @@
 				</div>
 				<!-- /team member -->	
 				<!-- team member -->
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="team-item-foto" style="background-image:url(img/team-member-3.jpg)">
 						<div class="active">
 							Secretary
@@ -203,7 +222,7 @@
 				</div>
 				<!-- /team member -->	
 				<!-- team member -->
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="team-item-foto" style="background-image:url(img/team-member-2.jpg)">
 						<div class="active">
 							Secretary
@@ -213,7 +232,7 @@
 				</div>
 				<!-- /team member -->	
 				<!-- team member -->
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6">
 					<div class="team-item-foto" style="background-image:url(img/team-member-1.jpg)">
 						<div class="active">
 							Secretary
@@ -226,9 +245,138 @@
 		</div>
 	</div>
 
+	<div class="info-box">
+		<div class="container">
+			<div class="row bottom-img">
+				<div class="col-md-5">
+					<img src="img/desktop.svg">
+				</div>
+				<div class="col-md-7">
+					<h2>YOUR AWESOME TITLE</h2>
+					<div class="col-md-8 text-col">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+					</div>
+					<div class="col-md-4 text-col">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="numbers">
+		<div class="container">
+			<div class="row">
+				<!-- number item -->
+				<div class="col-md-3 col-sm-6 number-item">
+					<div class="number-value">455</div>
+					<div class="number-text">Followers</div>
+				</div>
+				<!-- /number item -->
+				<!-- number item -->
+				<div class="col-md-3 col-sm-6 number-item">
+					<div class="number-value">1991</div>
+					<div class="number-text">Since</div>
+				</div>
+				<!-- /number item -->
+				<!-- number item -->
+				<div class="col-md-3 col-sm-6 number-item">
+					<div class="number-value">806</div>
+					<div class="number-text">Happy clients</div>
+				</div>
+				<!-- /number item -->
+				<!-- number item -->
+				<div class="col-md-3 col-sm-6 number-item">
+					<div class="number-value">923</div>
+					<div class="number-text">Projects</div>
+				</div>
+				<!-- /number item -->
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="main-footer">
+			<div class="container">
+				<footer>
+					<div class="row">
+						<div class="col-md-4">
+							<h3 class="title-footer">About us</h3>
+							<div class="about-text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h3 class="title-footer">Get in touch</h3>
+							<div class="about-text">
+								<div class="contacts"><span>Address:</span>
+									<div class="contact-text">66 South Street,<br>Window 6 Wonderland, </div>
+								</div>
+								<div class="contacts"><span>Phone:</span>
+									<div class="contact-text"><a href="tel:+440875369208">+440 875369208</a> - Office<br><a href="tel:+440353363114">+440 353363114</a> - Fax
+									</div>
+								</div>
+								<div class="contacts"><span>Email:</span>
+									<div class="contact-text"><a href="mailto:freepik@sitename.com">freepik@sitename.com</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h3 class="title-footer">Social media</h3>
+							<div class="about-text">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+									</p>
+							</div>
+							<div class="about-text">
+								<div class="media-wrap">
+									<div class="yt button-media">
+										<a href="#">
+											<img src="img/social_media/youtube.svg">
+										</a>
+									</div>
+									<div class="gp button-media">
+										<a href="#">
+											<img src="img/social_media/google.svg">
+										</a>
+									</div>
+									<div class="fb button-media">
+										<a href="#">
+											<img src="img/social_media/facebook.svg">
+										</a>
+									</div>
+									<div class="db button-media">
+										<a href="#">
+											<img src="img/social_media/dribbble.svg">
+										</a>
+									</div>
+									<div class="tw button-media">
+										<a href="#">
+											<img src="img/social_media/twitter.svg">
+										</a>
+									</div>
+									<div class="ig button-media">
+										<a href="#">
+											<img src="img/social_media/instagram.svg">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<div class="bottom-footer">
+			Copyrigts 2016
+		</div>
+	</div>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
